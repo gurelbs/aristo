@@ -1,0 +1,38 @@
+.page{
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.page-enter {
+    opacity: 0;
+    transform: translate(-400px, 0);
+    transform: translate3d(-400px, 0, 0);
+    overflow: hidden;
+
+   }
+   .page-enter.page-enter-active {
+    opacity: 1;
+    transition: opacity .5s ease-in-out;
+    transform: translate(0,0);
+    transform: translate3d(0,0,0);
+    transition-property: transform, opacity;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.175, 0.665, 0.320, 1), ease-in-out;
+    overflow: hidden;
+   }
+   .page-exit {
+    opacity: 1;
+    transform: translate(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    transition-property: transform, opacity;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.175, 0.665, 0.320, 1), ease-in-out;
+    overflow: hidden;
+   }
+   .page-exit.page-exit-active {
+    opacity: 0;
+    transform: translate(400px, 0);
+    transform: translate3d(400px, 0, 0);
+    overflow: hidden;
+
+   }

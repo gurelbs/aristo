@@ -1,0 +1,32 @@
+
+.main-container{
+    position: relative;
+}
+button:focus {
+    outline: none;
+}
+.MuiListItem-root {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    box-sizing: border-box;
+    text-align: right !important;
+    align-items: center;
+    padding: 8px ;
+    justify-content: flex-start;
+    text-decoration: none;
+}
+.ed{
+    font-size: 1.1rem !important;
+    padding: 0;
+    margin:0;
+}
+.ed:hover{
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    border: 1px solid rgba(255, 255, 255, 0.384) !important;
+}
+.ed{
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    border: 1px solid rgba(255, 255, 255, 0.384) !important;
+}
